@@ -1,0 +1,460 @@
+{
+	"info": {
+		"_postman_id": "d7556af0-4494-4d0b-9498-24d75d49856c",
+		"name": "Bits",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/auth/SIGNUP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Favas Bava",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "favas@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/auth/LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Aman",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "favas@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/auth/GET_USER",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhiOTc5Mjc5NDZhNGNlYTI2ZGE1ZGQ2OTMyMTcyMWVhMzFlZDBkMzc0MTk4MTdjNzkxYWQwMjA3NjA4NmEwOWQxYWY0YTA2ZjZmMmIwZjJiIn0.eyJhdWQiOiIxIiwianRpIjoiOGI5NzkyNzk0NmE0Y2VhMjZkYTVkZDY5MzIxNzIxZWEzMWVkMGQzNzQxOTgxN2M3OTFhZDAyMDc2MDg2YTA5ZDFhZjRhMDZmNmYyYjBmMmIiLCJpYXQiOjE2MDQ4MTkxNTgsIm5iZiI6MTYwNDgxOTE1OCwiZXhwIjoxNjM2MzU1MTU4LCJzdWIiOiIxMCIsInNjb3BlcyI6W119.rlBDiRzmUSgEvnQbkeYtYGo6BReEAJ8L0kimO3y7kXNbLseDnMNXKlMnc_ItSi_PEaT1Prc1J_AqQ6HttQVs1L4xaympo3yQ4lfYpZBXKDmr_j65PJAxlWS-xpq7ZVl3-aFH6rQaABD7Ng88tAeZmfEqMC2mZOaON-JzaAzi-xP1IvosD-OEWUMOu1v16qPWOLNOwkPu3qGjKTlLexRg5CCJwwIU1KE_3h9FMp8NZPoIQm1ck5RfskZzDufhVhnalAhVa4dHqcupnWzRkOABVjuWW-AzpZX8iB8oO6lBT3BdQL0vOZpjsSgA6im2WtTEDSnhKz9Qv1FlQXiGvnoppU9CnH32LwAaki9ba1eFmJhtuf8i6Bzb1kbWaNZUz7rxwjoXNw48Y-QgyOxBmE2Exf7hw-DggWFz29G40k8AXH48bYllSHlkzcq5nnIqGGKZd0Uin8AUo7fmrczzGdDVyU5VEDbGBCWdsbnV2SLbt-w9zEkw1cWb1nN6Oj_smo_lxXxBXzXngTN-eRRqZavEriFqhsPODE_Wp9CrGhn0QCEUZLaDbvCWmvqAK66gEa93shGAhQHHhyyxWZQAVKgattwaVVQXJMisTPoL122C6wkzO0zUqtmIlGfUlknG4KsK2iaAZRwLcy_kHMSb_Wb1der4ETksXy4bgYfCXlG4lto"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8000/api/auth/getuser"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/details/ADD",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhiOTc5Mjc5NDZhNGNlYTI2ZGE1ZGQ2OTMyMTcyMWVhMzFlZDBkMzc0MTk4MTdjNzkxYWQwMjA3NjA4NmEwOWQxYWY0YTA2ZjZmMmIwZjJiIn0.eyJhdWQiOiIxIiwianRpIjoiOGI5NzkyNzk0NmE0Y2VhMjZkYTVkZDY5MzIxNzIxZWEzMWVkMGQzNzQxOTgxN2M3OTFhZDAyMDc2MDg2YTA5ZDFhZjRhMDZmNmYyYjBmMmIiLCJpYXQiOjE2MDQ4MTkxNTgsIm5iZiI6MTYwNDgxOTE1OCwiZXhwIjoxNjM2MzU1MTU4LCJzdWIiOiIxMCIsInNjb3BlcyI6W119.rlBDiRzmUSgEvnQbkeYtYGo6BReEAJ8L0kimO3y7kXNbLseDnMNXKlMnc_ItSi_PEaT1Prc1J_AqQ6HttQVs1L4xaympo3yQ4lfYpZBXKDmr_j65PJAxlWS-xpq7ZVl3-aFH6rQaABD7Ng88tAeZmfEqMC2mZOaON-JzaAzi-xP1IvosD-OEWUMOu1v16qPWOLNOwkPu3qGjKTlLexRg5CCJwwIU1KE_3h9FMp8NZPoIQm1ck5RfskZzDufhVhnalAhVa4dHqcupnWzRkOABVjuWW-AzpZX8iB8oO6lBT3BdQL0vOZpjsSgA6im2WtTEDSnhKz9Qv1FlQXiGvnoppU9CnH32LwAaki9ba1eFmJhtuf8i6Bzb1kbWaNZUz7rxwjoXNw48Y-QgyOxBmE2Exf7hw-DggWFz29G40k8AXH48bYllSHlkzcq5nnIqGGKZd0Uin8AUo7fmrczzGdDVyU5VEDbGBCWdsbnV2SLbt-w9zEkw1cWb1nN6Oj_smo_lxXxBXzXngTN-eRRqZavEriFqhsPODE_Wp9CrGhn0QCEUZLaDbvCWmvqAK66gEa93shGAhQHHhyyxWZQAVKgattwaVVQXJMisTPoL122C6wkzO0zUqtmIlGfUlknG4KsK2iaAZRwLcy_kHMSb_Wb1der4ETksXy4bgYfCXlG4lto"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Fadhil",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "ABC",
+							"type": "text"
+						},
+						{
+							"key": "company_name",
+							"value": "info",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "9605897252",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "mpm",
+							"type": "text"
+						},
+						{
+							"key": "service_req",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "next_step",
+							"value": "step 2",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "here",
+							"type": "text"
+						},
+						{
+							"key": "proposed_fee",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "08-11-2020",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Active",
+							"type": "text"
+						},
+						{
+							"key": "inv_date",
+							"value": "08-11-2020",
+							"type": "text"
+						},
+						{
+							"key": "billing_amnt",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "payment_status",
+							"value": "Pending",
+							"type": "text"
+						},
+						{
+							"key": "payment_date",
+							"value": "08-11-2020",
+							"type": "text"
+						},
+						{
+							"key": "amnt_recieve",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8000/api/details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/details/ALL",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZlZWM0ZTU3NzhmYjhlZGQ1MzY5N2Y4MDYwMDU5YzNjZWQzNzQxZmRiNGY2Mjc0NGY4YzFmOTA5Y2JiMzIxZTY4NmNkOGViNDk5MWQ1ZTkxIn0.eyJhdWQiOiIxIiwianRpIjoiZmVlYzRlNTc3OGZiOGVkZDUzNjk3ZjgwNjAwNTljM2NlZDM3NDFmZGI0ZjYyNzQ0ZjhjMWY5MDljYmIzMjFlNjg2Y2Q4ZWI0OTkxZDVlOTEiLCJpYXQiOjE2MDQ4MTkxODgsIm5iZiI6MTYwNDgxOTE4OCwiZXhwIjoxNjM2MzU1MTg4LCJzdWIiOiIxMCIsInNjb3BlcyI6W119.Fd5bORUq2lp3kp-d5sxGrFnc1uv2XeBZuRM3DExXER6VS_CDMGNmGoIpuxe_Ihubel0pCYt8MZ8Ym54nujp11YS1JVVYFplXT6mbAX9DxTmIDInc5ByFI4jIl0g8RhASGyXcIFx1075uLBaCC5uEeHrrRZk9fMGsxToqgfyJl1e_hmjPxIwQR2anDg6fHQZV5k0oec1-7pNHexp6fYObAhxmWXBdHJ1tmlSqFSCF9559AtZLWLcgmid0KFZDRB52YbEqb4s2aBT_8bD9uz1xKAOOp0pD9JN9rfXeIc4NHz8agHEkpUMR_Z_GZXa1-b53bGsNNXqaOfdpGuK26gANm2lOZ1O1qZO10ew2Tx4Gs9SX5RNlgBQAcGfTtxk9cXDEyRHKYNPOypFwt7HEjb6oXg-YD99FY0Ul23C7VbpZcwaKH1qjy0qSNQDL7eq1omrEbkBw_sugi91DvtGz5PbbhaY2w62j8e8hQVDNOYPPyEkvKnHEnhTNV8S0OOH43jfjIgx6dc4NVnoDVt3TNTrAomCZx-EpAOEP55ID5E7wKPVxe3ycXmoXeQ85lm5J1BMF0XhoG_S2xTA0BvR3yKgtedi7L8o8lZzj9sADecZk6EvdGl9SbfGwEmJFVaFkyRgS8wT_HaJ9ccwekYV_Y3cs51qX0MWNsfEl8CfeIZmDJgs"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://localhost:8000/api/details/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/product/SINGLE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZlZWM0ZTU3NzhmYjhlZGQ1MzY5N2Y4MDYwMDU5YzNjZWQzNzQxZmRiNGY2Mjc0NGY4YzFmOTA5Y2JiMzIxZTY4NmNkOGViNDk5MWQ1ZTkxIn0.eyJhdWQiOiIxIiwianRpIjoiZmVlYzRlNTc3OGZiOGVkZDUzNjk3ZjgwNjAwNTljM2NlZDM3NDFmZGI0ZjYyNzQ0ZjhjMWY5MDljYmIzMjFlNjg2Y2Q4ZWI0OTkxZDVlOTEiLCJpYXQiOjE2MDQ4MTkxODgsIm5iZiI6MTYwNDgxOTE4OCwiZXhwIjoxNjM2MzU1MTg4LCJzdWIiOiIxMCIsInNjb3BlcyI6W119.Fd5bORUq2lp3kp-d5sxGrFnc1uv2XeBZuRM3DExXER6VS_CDMGNmGoIpuxe_Ihubel0pCYt8MZ8Ym54nujp11YS1JVVYFplXT6mbAX9DxTmIDInc5ByFI4jIl0g8RhASGyXcIFx1075uLBaCC5uEeHrrRZk9fMGsxToqgfyJl1e_hmjPxIwQR2anDg6fHQZV5k0oec1-7pNHexp6fYObAhxmWXBdHJ1tmlSqFSCF9559AtZLWLcgmid0KFZDRB52YbEqb4s2aBT_8bD9uz1xKAOOp0pD9JN9rfXeIc4NHz8agHEkpUMR_Z_GZXa1-b53bGsNNXqaOfdpGuK26gANm2lOZ1O1qZO10ew2Tx4Gs9SX5RNlgBQAcGfTtxk9cXDEyRHKYNPOypFwt7HEjb6oXg-YD99FY0Ul23C7VbpZcwaKH1qjy0qSNQDL7eq1omrEbkBw_sugi91DvtGz5PbbhaY2w62j8e8hQVDNOYPPyEkvKnHEnhTNV8S0OOH43jfjIgx6dc4NVnoDVt3TNTrAomCZx-EpAOEP55ID5E7wKPVxe3ycXmoXeQ85lm5J1BMF0XhoG_S2xTA0BvR3yKgtedi7L8o8lZzj9sADecZk6EvdGl9SbfGwEmJFVaFkyRgS8wT_HaJ9ccwekYV_Y3cs51qX0MWNsfEl8CfeIZmDJgs"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": "http://localhost:8000/api/details/2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/details/UPDATE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZlZWM0ZTU3NzhmYjhlZGQ1MzY5N2Y4MDYwMDU5YzNjZWQzNzQxZmRiNGY2Mjc0NGY4YzFmOTA5Y2JiMzIxZTY4NmNkOGViNDk5MWQ1ZTkxIn0.eyJhdWQiOiIxIiwianRpIjoiZmVlYzRlNTc3OGZiOGVkZDUzNjk3ZjgwNjAwNTljM2NlZDM3NDFmZGI0ZjYyNzQ0ZjhjMWY5MDljYmIzMjFlNjg2Y2Q4ZWI0OTkxZDVlOTEiLCJpYXQiOjE2MDQ4MTkxODgsIm5iZiI6MTYwNDgxOTE4OCwiZXhwIjoxNjM2MzU1MTg4LCJzdWIiOiIxMCIsInNjb3BlcyI6W119.Fd5bORUq2lp3kp-d5sxGrFnc1uv2XeBZuRM3DExXER6VS_CDMGNmGoIpuxe_Ihubel0pCYt8MZ8Ym54nujp11YS1JVVYFplXT6mbAX9DxTmIDInc5ByFI4jIl0g8RhASGyXcIFx1075uLBaCC5uEeHrrRZk9fMGsxToqgfyJl1e_hmjPxIwQR2anDg6fHQZV5k0oec1-7pNHexp6fYObAhxmWXBdHJ1tmlSqFSCF9559AtZLWLcgmid0KFZDRB52YbEqb4s2aBT_8bD9uz1xKAOOp0pD9JN9rfXeIc4NHz8agHEkpUMR_Z_GZXa1-b53bGsNNXqaOfdpGuK26gANm2lOZ1O1qZO10ew2Tx4Gs9SX5RNlgBQAcGfTtxk9cXDEyRHKYNPOypFwt7HEjb6oXg-YD99FY0Ul23C7VbpZcwaKH1qjy0qSNQDL7eq1omrEbkBw_sugi91DvtGz5PbbhaY2w62j8e8hQVDNOYPPyEkvKnHEnhTNV8S0OOH43jfjIgx6dc4NVnoDVt3TNTrAomCZx-EpAOEP55ID5E7wKPVxe3ycXmoXeQ85lm5J1BMF0XhoG_S2xTA0BvR3yKgtedi7L8o8lZzj9sADecZk6EvdGl9SbfGwEmJFVaFkyRgS8wT_HaJ9ccwekYV_Y3cs51qX0MWNsfEl8CfeIZmDJgs"
+					}
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Fadhil Sanin",
+							"type": "text"
+						},
+						{
+							"key": "category",
+							"value": "ABC",
+							"type": "text"
+						},
+						{
+							"key": "company_name",
+							"value": "info",
+							"type": "text"
+						},
+						{
+							"key": "mobile_no",
+							"value": "9605897251",
+							"type": "text"
+						},
+						{
+							"key": "place",
+							"value": "mpm",
+							"type": "text"
+						},
+						{
+							"key": "service_req",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "next_step",
+							"value": "step 2",
+							"type": "text"
+						},
+						{
+							"key": "remark",
+							"value": "here",
+							"type": "text"
+						},
+						{
+							"key": "proposed_fee",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "08-11-2020",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "Active",
+							"type": "text"
+						},
+						{
+							"key": "inv_date",
+							"value": "08-11-2020",
+							"type": "text"
+						},
+						{
+							"key": "billing_amnt",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "payment_status",
+							"value": "Pending",
+							"type": "text"
+						},
+						{
+							"key": "payment_date",
+							"value": "08-11-2020",
+							"type": "text"
+						},
+						{
+							"key": "amnt_recieve",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/details/2?_method=PUT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"details",
+						"2"
+					],
+					"query": [
+						{
+							"key": "_method",
+							"value": "PUT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/detials/4/DELETE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZlZWM0ZTU3NzhmYjhlZGQ1MzY5N2Y4MDYwMDU5YzNjZWQzNzQxZmRiNGY2Mjc0NGY4YzFmOTA5Y2JiMzIxZTY4NmNkOGViNDk5MWQ1ZTkxIn0.eyJhdWQiOiIxIiwianRpIjoiZmVlYzRlNTc3OGZiOGVkZDUzNjk3ZjgwNjAwNTljM2NlZDM3NDFmZGI0ZjYyNzQ0ZjhjMWY5MDljYmIzMjFlNjg2Y2Q4ZWI0OTkxZDVlOTEiLCJpYXQiOjE2MDQ4MTkxODgsIm5iZiI6MTYwNDgxOTE4OCwiZXhwIjoxNjM2MzU1MTg4LCJzdWIiOiIxMCIsInNjb3BlcyI6W119.Fd5bORUq2lp3kp-d5sxGrFnc1uv2XeBZuRM3DExXER6VS_CDMGNmGoIpuxe_Ihubel0pCYt8MZ8Ym54nujp11YS1JVVYFplXT6mbAX9DxTmIDInc5ByFI4jIl0g8RhASGyXcIFx1075uLBaCC5uEeHrrRZk9fMGsxToqgfyJl1e_hmjPxIwQR2anDg6fHQZV5k0oec1-7pNHexp6fYObAhxmWXBdHJ1tmlSqFSCF9559AtZLWLcgmid0KFZDRB52YbEqb4s2aBT_8bD9uz1xKAOOp0pD9JN9rfXeIc4NHz8agHEkpUMR_Z_GZXa1-b53bGsNNXqaOfdpGuK26gANm2lOZ1O1qZO10ew2Tx4Gs9SX5RNlgBQAcGfTtxk9cXDEyRHKYNPOypFwt7HEjb6oXg-YD99FY0Ul23C7VbpZcwaKH1qjy0qSNQDL7eq1omrEbkBw_sugi91DvtGz5PbbhaY2w62j8e8hQVDNOYPPyEkvKnHEnhTNV8S0OOH43jfjIgx6dc4NVnoDVt3TNTrAomCZx-EpAOEP55ID5E7wKPVxe3ycXmoXeQ85lm5J1BMF0XhoG_S2xTA0BvR3yKgtedi7L8o8lZzj9sADecZk6EvdGl9SbfGwEmJFVaFkyRgS8wT_HaJ9ccwekYV_Y3cs51qX0MWNsfEl8CfeIZmDJgs"
+					}
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8000/api/details/4"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/details/SEARCH",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhiOTc5Mjc5NDZhNGNlYTI2ZGE1ZGQ2OTMyMTcyMWVhMzFlZDBkMzc0MTk4MTdjNzkxYWQwMjA3NjA4NmEwOWQxYWY0YTA2ZjZmMmIwZjJiIn0.eyJhdWQiOiIxIiwianRpIjoiOGI5NzkyNzk0NmE0Y2VhMjZkYTVkZDY5MzIxNzIxZWEzMWVkMGQzNzQxOTgxN2M3OTFhZDAyMDc2MDg2YTA5ZDFhZjRhMDZmNmYyYjBmMmIiLCJpYXQiOjE2MDQ4MTkxNTgsIm5iZiI6MTYwNDgxOTE1OCwiZXhwIjoxNjM2MzU1MTU4LCJzdWIiOiIxMCIsInNjb3BlcyI6W119.rlBDiRzmUSgEvnQbkeYtYGo6BReEAJ8L0kimO3y7kXNbLseDnMNXKlMnc_ItSi_PEaT1Prc1J_AqQ6HttQVs1L4xaympo3yQ4lfYpZBXKDmr_j65PJAxlWS-xpq7ZVl3-aFH6rQaABD7Ng88tAeZmfEqMC2mZOaON-JzaAzi-xP1IvosD-OEWUMOu1v16qPWOLNOwkPu3qGjKTlLexRg5CCJwwIU1KE_3h9FMp8NZPoIQm1ck5RfskZzDufhVhnalAhVa4dHqcupnWzRkOABVjuWW-AzpZX8iB8oO6lBT3BdQL0vOZpjsSgA6im2WtTEDSnhKz9Qv1FlQXiGvnoppU9CnH32LwAaki9ba1eFmJhtuf8i6Bzb1kbWaNZUz7rxwjoXNw48Y-QgyOxBmE2Exf7hw-DggWFz29G40k8AXH48bYllSHlkzcq5nnIqGGKZd0Uin8AUo7fmrczzGdDVyU5VEDbGBCWdsbnV2SLbt-w9zEkw1cWb1nN6Oj_smo_lxXxBXzXngTN-eRRqZavEriFqhsPODE_Wp9CrGhn0QCEUZLaDbvCWmvqAK66gEa93shGAhQHHhyyxWZQAVKgattwaVVQXJMisTPoL122C6wkzO0zUqtmIlGfUlknG4KsK2iaAZRwLcy_kHMSb_Wb1der4ETksXy4bgYfCXlG4lto"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/search/details?data=9605897251",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"search",
+						"details"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "9605897251"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

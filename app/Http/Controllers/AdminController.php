@@ -17,8 +17,14 @@ class AdminController extends Controller
           return view('admin.adminlogin');
     }
       
-        // return view('admin.adminhome');
-        return redirect('admin/home');
+        
+        return redirect('admin/details');
     
     }
+
+    public function logout(){
+    // session()->flush();
+    Auth::logout();
+    return redirect('/');
+   }
 }

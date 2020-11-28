@@ -1,0 +1,48 @@
+API Updates
+===============
+
+
+1- Sigle Payment date filter
+
+URL: Site_url/api/payment/filter   
+method:post
+Accept: application/json
+Bearer Token:###########
+fields: start_date: 01-11-2020
+		end_date: 15-11-2020
+
+
+
+2- sigle Date filter
+
+URL: Site_url/api/date/filter
+method:post
+Accept: application/json
+Bearer Token:###########
+fields: start_date: 01-11-2020
+		end_date: 15-11-2020
+
+
+
+3- date,status,payment status filter   
+
+URL: Site_url/api/custome/filter		
+method:post
+Accept: application/json
+Bearer Token:###########
+fields: 
+		start_date:10-11-2020
+		end_date:15-11-2020
+		status:inactive
+		payment_status:pending
+
+
+
+4- Service filter
+
+URL: Site_url/api/service/filter
+method:post
+Accept: application/json
+Bearer Token:###########
+fields:
+		service_req: service2

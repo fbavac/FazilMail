@@ -27,11 +27,11 @@ class HomeController extends Controller
         // return view('home');
         if(auth()->user()->role == "Admin"){
            
-            return redirect('admin/home');
+            return redirect('admin/details');
 
         }
        
-        return view('home');
+        return view('/');
     
     }
 
